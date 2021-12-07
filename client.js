@@ -1,32 +1,32 @@
 const employees = [
   {
     name: 'Atticus',
-    employeeNumber: '2405',
-    annualSalary: '47000',
+    employeeNumber: 2405,
+    annualSalary: 47000,
     reviewRating: 3
   },
   {
     name: 'Jem',
-    employeeNumber: '62347',
-    annualSalary: '63500',
+    employeeNumber: 62347,
+    annualSalary: 63500,
     reviewRating: 4
   },
   {
     name: 'Scout',
-    employeeNumber: '6243',
-    annualSalary: '74750',
+    employeeNumber: 6243,
+    annualSalary: 74750,
     reviewRating: 5
   },
   {
     name: 'Robert',
-    employeeNumber: '26835',
-    annualSalary: '66000',
+    employeeNumber: 26835,
+    annualSalary: 66000,
     reviewRating: 1
   },
   {
     name: 'Mayella',
-    employeeNumber: '89068',
-    annualSalary: '35000',
+    employeeNumber: 89068,
+    annualSalary: 35000,
     reviewRating: 1
   }
 ];
@@ -41,7 +41,7 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
-for (zeep of employees) {
+for (let zeep of employees) {
   console.log(zeep);
 };
 function EmployeeMaker(employee) {
@@ -73,8 +73,12 @@ function EmployeeMaker(employee) {
   this.bonusPercentage = bonusPercentage,
   this.totalCompensation = employee.annualSalary + bonusPercentage,
   this.totalBonus = Math.round(this.totalCompensation);
-
 };
 console.log(new EmployeeMaker(employees[0]));
 console.log(new EmployeeMaker(employees[1]));
 
+/**
+ good to take notes and turning abstract 
+ instructions into simple ones
+ best comments are 'why' comments  
+ */
